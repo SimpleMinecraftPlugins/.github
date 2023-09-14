@@ -27,10 +27,6 @@ body:
       label: Server Version
       description: What server version are you on?
       options:
-        - 1.8.8 
-        - 1.12.2
-        - 1.16.5
-        - 1.19.4
         - 1.20.1
         # 1.20.2
     validations:
@@ -41,11 +37,7 @@ body:
       label: Server Plugin
       description: What plugin are you using?
       options:
-        - CrazyCrates
-        - CrazyEnvoys
-        - CrazyVouchers
-        - CrazyEnchantments
-        - ChatManager
+        - SimpleChat
     validations:
       required: true
   - type: textarea
@@ -74,14 +66,3 @@ body:
       description: Add any other context about the problem here.
     validations:
       required: false
-  - type: checkboxes
-    attributes:
-      label: Agreements
-      description: Please agree to the following.
-      options:
-        - label: I have searched for and ensured there isn't already an open issue regarding this.
-          required: true
-        - label: I ticked all the boxes without actually reading them
-          required: false
-        - label: My version of Minecraft is supported by CrazyCrew.
-          required: true
